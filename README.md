@@ -8,7 +8,7 @@ One creates a folder by making a file "onnob/readme" say (so "onnob" before the 
 
 ## Finite-difference exercise
 
-`
+  ```
     import matplotlib.pyplot as plt
     import time
     from scipy.sparse import csr_matrix
@@ -35,4 +35,4 @@ One creates a folder by making a file "onnob/readme" say (so "onnob" before the 
     lambn = (a[0,0,0]*Lege[0,:]+a[0,0,1]*Lege[1,:]+a[0,0,2]*Lege[2,:]+a[0,0,3]*Lege[3,:])
     lambn = lambn-min(lambn)
     lamb = lamb*lambn
-`
+  ```
