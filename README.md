@@ -8,16 +8,17 @@ One creates a folder by making a file "onnob/readme" say (so "onnob" before the 
 
 ## Finite-difference exercise
 
-`import matplotlib.pyplot as plt
-import time
-from scipy.sparse import csr_matrix
-from scipy.sparse.linalg import spsolve
-from scipy.sparse import diags
-...
-num = int(1)  # highest degree of Legendre
-DATA = int(5)
-a = (np.random.rand(num,1,DATA)) #coefficients for basis functions
-...
+`
+    import matplotlib.pyplot as plt
+    import time
+    from scipy.sparse import csr_matrix
+    from scipy.sparse.linalg import spsolve
+    from scipy.sparse import diags
+    ...
+    num = int(1)  # highest degree of Legendre
+    DATA = int(5)
+    a = (np.random.rand(num,1,DATA)) #coefficients for basis functions
+    ...
     Lege[0,:] = 1+0*xj
     Lege[1,:] = xj
     Lege[2,:] = (3/2)*xj**2-1/2
