@@ -8,6 +8,7 @@ One creates a folder by making a file "onnob/readme" say (so "onnob" before the 
 
 ## Finite-difference exercise
 
+This is how I made the initial condition (do it better):
   ```
     import matplotlib.pyplot as plt
     import time
