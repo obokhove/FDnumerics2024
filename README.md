@@ -26,7 +26,7 @@ for k in range(1,Nx): # Note: one extra point!
         lambn[1:Nx] = lamb[1:Nx]+(1-thet)*mu*(lamb[0:Nx-1]-2.0*lamb[1:Nx]+lamb[2:Nx+1])
         lambn[1:Nx] = lambn[1:Nx]+... advection stuff  # Note: one extra point Nx+1!
         lambn[Nx] = 0.0  # Dirichlet bndry 
-    '''
+```
 
 This is how I made the initial condition (do it better):
   ```
