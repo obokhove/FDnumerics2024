@@ -8,7 +8,7 @@ One creates a folder by making a file "onnob/readme" say (so "onnob" before the 
 
 ## Finite-difference exercise
 
-Vector-space-looping (sorry the u is a lamb and lambn in my code:
+Vector-space-looping (sorry the u and unew are lamb and lambn in my code):
 ```
 Sk[0,0] = ...  # For Dirichlet boundary
 Sk[0,1] = ...  # For Dirichlet boundary
