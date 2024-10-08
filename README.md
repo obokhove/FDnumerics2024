@@ -8,6 +8,26 @@ One creates a folder by making a file "onnob/readme" say (so "onnob" before the 
 
 ## Finite-difference exercise
 
+Vector-space-looping (sorry the u is a lamb and lambn in my code:
+```
+Sk[0,0] = ...  # For Dirichlet boundary
+Sk[0,1] = ...  # For Dirichlet boundary
+  
+for k in range(1,Nx): # Note: one extra point!
+            Sk[k,k] = 1+...
+            Sk[k,k+1] = -epss*thet*mu + ...
+            Sk[k,k-1] = -epss*thet*mu + ...
+        Sk[Nx,Nx] = ...  # For Dirichlet boundary
+        Sk[Nx,Nx-1] = ...  # For Dirichlet boundary
+        # print('Sk: ',Sk)
+        Ssparse = csr_matrix(Sk)
+        # Comment out discretization:
+        lambn[0] = 0.0 # Dirichlet bndry 
+        lambn[1:Nx] = lamb[1:Nx]+(1-thet)*mu*(lamb[0:Nx-1]-2.0*lamb[1:Nx]+lamb[2:Nx+1])
+        lambn[1:Nx] = lambn[1:Nx]+... advection stuff  # Note: one extra point Nx+1!
+        lambn[Nx] = 0.0  # Dirichlet bndry 
+    '''
+
 This is how I made the initial condition (do it better):
   ```
     import matplotlib.pyplot as plt
