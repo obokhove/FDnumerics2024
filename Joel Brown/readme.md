@@ -1,1 +1,1 @@
-
+Written solutions and plots are within the 'MATH5453M Numerical Exercises 1' PDF. Relevant codes mentioned in exercises are named underneath the plots which they create. All variables are amendable at the beginning of codes.
