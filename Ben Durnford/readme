@@ -1,1 +1,2 @@
 
+My answers are entirely contained within a single PDF. In the appropriate sections, I explicitly reference the name of the python file that I have used within the question and what values I have set each parameter to be. Instead of duplicating code, I have opted to use functions to define various initial conditions which can be changed easily by editing one line of code.
