@@ -1,0 +1,11 @@
+For question 4 to obtain the graphs run q4i.py, changing the value of del_t from 0.0012 to 0.0013.
+The explicit solution to our problem is in q4ii.py.
+
+For question 5, to otain the graphs please set del_t=0.01, del_x=0.01, a=0.02, epsilon=0. Then run again setting del_t=0.02
+
+For question 6, to switch between the simple case and the case with Legengre polynomials change use_legendre from False to True. Change values of del_t to 
+0.00001, 0.00005, 0.0001 to get mu values. Change value of theta to 0,0.5,1 as appropriate
+
+For question 7 change values of del_x 0.01, 0.001 with corresponding del_t values 0.00005, 0.0000005. Ensure theta is set to 1.0
+
+For question 8, change values of epsilon 0.01, 0.0001, 0.00001. Please note, this is slow at del_t 0.0000005, del_x 0.001
