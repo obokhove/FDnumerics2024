@@ -90,5 +90,5 @@ def q5(Lp,L, dt, a, dx, T, theta, epsilon):
             
             
 
-q5(0,1,0.05,1,0.05,50,0,0)
+q5(0,1,0.05,1,0.05,50,0,0) #make sure dt=dx for the CFL to = 1 when a(t) =1
 
