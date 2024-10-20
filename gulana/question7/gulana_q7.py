@@ -31,7 +31,7 @@ def boundary(x,J):
     return UBC + C
 
 
-def q5(Lp,L, a, J, T, theta, epsilon, CFL, N):
+def q5(Lp,L, a, J, T, theta, epsilon, N):
     dx = (L-Lp)/J
     print(f'dx={dx}')
     dt = T/N
@@ -108,4 +108,7 @@ def q5(Lp,L, a, J, T, theta, epsilon, CFL, N):
             counter+=1
         
         
-q5(-1,1,1,5,1,1,0.001,1, 1000000)
+q5(-1,1,1,5,1,1,0.001, 1000000) #dx = 0.4
+q5(-1,1,1,10,1,1,0.001, 1000000) #dx = 0.2
+q5(-1,1,1,20,1,1,0.001,1000000) #dx =0.1
+q5(-1,1,1,40,1,1,0.001,1000000) #dx = 0.05
