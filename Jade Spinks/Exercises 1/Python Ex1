@@ -1,0 +1,61 @@
+
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Oct 20 16:02:19 2024
+
+@author: jadexoxoxoxo
+"""
+import decimal 
+import numpy as np
+#Explicit Scheme
+
+def expl(BC1,BC2,xsteps, tsteps,x,t):
+    #Explicit scheme for linear advection-diffusion equation with Dirichlet BCs
+
+    #ICs - to define u0(x)
+    IC = int(x**2)
+    
+    #BCs
+    xLp = decimal.Decimal(BC1)
+    xL = decimal.Decimal(BC2)
+    
+    #Mesh and indexing
+    
+    J = int(xsteps)
+    N = int(tsteps)
+    M = (J-1)*(N-1)
+    
+    dx=decimal.Decimal(1/J)
+    dt=decimal.Decimal(1/N)
+    
+    Usol = np.zeros(M)
+    
+    #AJUST INDEXING
+    
+    Jlist = list(range(0,J))
+    Nlist = list(range(0,N))
+    print(Jlist)
+    print(Nlist)
+    #Setting BCs
+    for j in Jlist:
+        Usol[j+1]= IC
+    for n in Nlist:
+        Usol[J*n+J]=0
+        Usol[J*n]=0
+        
+expl(1,1,4,5,3,3)
+    
+    
+        
+    
+        
+    
+        
+    
+    
+        
+    
+    
+    
+    
