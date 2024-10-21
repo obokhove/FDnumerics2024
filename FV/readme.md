@@ -1,4 +1,4 @@
-Finite-volume or discontinuous Galerkin leading-order or Godunov method
+## Finite-volume or discontinuous Galerkin leading-order or Godunov method
 
 Firedrake (installation and examples)
 https://www.firedrakeproject.org/documentation.html
