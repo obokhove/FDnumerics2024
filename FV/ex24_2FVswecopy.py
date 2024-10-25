@@ -267,8 +267,8 @@ while tijd <= 1.0*Tend:
     # Note: not done elegantly should define matrix and use function
     #
     if Neqn==0: # Linear swe
-     U1star = 0.5*(Hx*(U2l-U2r)/c00+U1l+U1r) #  Definition of Riemann state u1=U1star at cell edge eta
-     U2star = 0.5*(U2l+U2r+c00*(U1l-U1r))    #  Definition of Riemann state u2=U2star at cell edge u
+     U1star = 0 #  REMOVED Definition of Riemann state u1=U1star at cell edge eta
+     U2star = 0    # REMOVED Definition of Riemann state u2=U2star at cell edge u
      F1 = Hx*U2star       # flux F1 = F1(U1star,U2star) = U2star = H(x)*u
      F2 = gtilde*U1star    # flux F2 = F2(U1star,U2star) = g*U1star = g*eta
      # print('F1',F1)
