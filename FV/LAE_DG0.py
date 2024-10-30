@@ -70,14 +70,14 @@ line0.set_color('black')
 #ax.scatter(x_k, u0_k, color='red', marker='.', label=r'$u_{ex},t=0$')  # plot exact solution at grid points
 
 # === construct the linear solver ===
-F_l = a * u_in # flux at the left boundary, inflow BC
-F_r = a * u_   # flux at the right boundary, outflow/open BC
-F_int = a * u_('+') # Godunov flux at the interior facets
+F_in  = a * u_in     # flux at the left boundary, inflow BC
+F_out = a * u_       # flux at the right boundary, outflow/open BC
+F_int = a * u_('+')  # Godunov flux at the interior facets
 
 au = w * u_trial * dx
 Lu = (w * u_ * dx + 
-      dtc * (  w * F_l * ds(1)    # inflow boundary integral, ds(1) stands for the left boundary
-             - w * F_r * ds(2)    # outflow boundary integral, ds(2) stands for the right boundary
+      dtc * (  w * F_in * ds(1)    # inflow boundary integral, ds(1) stands for the left boundary
+             - w * F_out * ds(2)    # outflow boundary integral, ds(2) stands for the right boundary
              - (w('+') - w('-')) * F_int * dS ))   # Godunov flux used for the interior facets
 
 problem = LinearVariationalProblem(au, Lu, u)
@@ -85,7 +85,7 @@ solver = LinearVariationalSolver(problem)
 
 t = t0 # start time
 step = 0
-t_output = 0.3
+t_output = 0.3 # < Tend
 output_step = int(t_output/dt)
 
 # === time marching ===
