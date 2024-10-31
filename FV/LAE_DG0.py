@@ -14,7 +14,7 @@ import numpy as np
 #                              E_k
 #          x0                |<--->|                       x1
 #       ---|-----|-----|-----|-----|-----|-----|-----|-----|---> x
-#         x_0   x_1   ...  x_k-1  x_k  x_k+1  ...  x_Nx-1 x_Nx   <= grid points
+#         x_0   x_1   ...  x_k-1  x_k  x_k+1  ...  x_Nx-1 x_Nx   <= grid points  
 
 # === discretisation ===
 Lx = 1 # length of the interval
@@ -37,7 +37,8 @@ dtc = Constant(dt)
 # === define function space and Firedrake Functions ===
 V = FunctionSpace(mesh, "DG", 0)
 x = SpatialCoordinate(mesh)
-n = FacetNormal(mesh)
+nx = FacetNormal(mesh)[0]
+an = 0.5*(a * nx + abs(a * nx))
 
 u_ = Function(V) # previous time-step solution
 u = Function(V)  # current time-step solution
@@ -72,7 +73,10 @@ line0.set_color('black')
 # === construct the linear solver ===
 F_in  = a * u_in     # flux at the left boundary, inflow BC
 F_out = a * u_       # flux at the right boundary, outflow/open BC
-F_int = a * u_('+')  # Godunov flux at the interior facets
+#F_int = a * u_('+')  # Godunov flux at the interior facets, turns out to be the simplified form
+F_int = an('+')*u_('+') - an('-')*u_('-') # general form
+# "Note that there is no guaranteed relationship between the global x coordinate and the facet orientations.
+# It can be different from one facet to the next." (--DH)
 
 au = w * u_trial * dx
 Lu = (w * u_ * dx + 
