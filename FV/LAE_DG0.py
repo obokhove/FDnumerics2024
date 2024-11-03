@@ -3,8 +3,9 @@
 # 	(a) Riemann problem u0(x) = ul,  x < x_mid; ur,  x >=x_mid
 # 	(b) traveling wave u0(x) = sin(2*pi*x/Lx)
 # Boundary condition: specify upwind boundary value u(x0,t) for t>0
-# Discrete exact solutions are plotted at grid points using matplotlab,
-# Numerical solutions are plotted using Firedarke built-in plotting function.
+# Visualisation of results:
+# - Discrete exact solutions are plotted at grid points using matplotlab,
+# - Numerical solutions are plotted using Firedarke built-in plotting function.
 
 from firedrake import *
 import matplotlib.pyplot as plt
@@ -68,6 +69,8 @@ u_.interpolate(u0)
 fig, ax = plt.subplots(figsize=(8, 5), layout='constrained')
 line0, = plot(u_, axes=ax, label=r'$u_0(x)$')   # plot DG0 FE approximation
 line0.set_color('black')
+
+#breakpoint()
 #ax.scatter(x_k, u0_k, color='red', marker='.', label=r'$u_{ex},t=0$')  # plot exact solution at grid points
 
 # === construct the linear solver ===
