@@ -2,7 +2,7 @@
 
 Load Firedrake from https://www.firedrakeproject.org/documentation.html either the recommended version or docker version.
 
-## Finite-element exercises (TBC 2023 instructions)
+## Finite-element exercises (TBC 2024 instructions)
 
 The exercise on FEM modelling via Firedrake is found in: ... TBD.
 
