@@ -4,7 +4,7 @@ Load Firedrake from https://www.firedrakeproject.org/documentation.html either t
 
 ## Finite-element exercises (TBC 2023 instructions)
 
-The exercise on FEM modelling via Firedrake is found in: ex23_3wavedynFD.pdf (23-11-2023).
+The exercise on FEM modelling via Firedrake is found in: ... TBD.
 
 Sample Firedrake programs:
 - Poisson equation via weak formulation and minimisation (Yang Lu with Robin Furze)
@@ -15,10 +15,10 @@ Sample Firedrake programs:
 - Bokhove and Kalogirou 2016: Lecture Notes on the Theory of Water Waves, Edited by: Bridges, Groves and Nicholls, London Mathematical Society Lecture Notes Series 426, 226-259 https://www1.maths.leeds.ac.uk/~obokhove/lms-cup2015.pdf
 
 ## Firedrake simulation instructions
-See codes' folders.
+See codes' folders. TBD.
 
-## Paraview instructions
-See codes' folders.
+## Paraview instructions TBD
+See codes' folders. TBD.
 
 :new: *Warning* (via TH from IT): When other modules have been loaded incompatible libraries then Paraview may not work.
 E.g., the "anaconda3" module will cause Qt problems with "paraview". Clean environment by running:
