@@ -1,1 +1,1 @@
-
+Please find a hand-written PDF file which goes through the mathematical parts of the questions (questions are numbered according to the handout). The Jupyter Notebook file includes the code I altered to implement the Finite Volume numerical scheme. When opened in Jupyter notebook (accessible through anaconda/appsanywhere) please click run ~ run all cells and this should generate all plots. The code itself also contains comments to explain what I'm doing.
