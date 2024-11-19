@@ -2,7 +2,7 @@
 Please consult the ex24_3FEMdraft.pdf file as well as the CDFEM_Firedrakes.pdf file.
 
 ## About
-This folder contains materials related to the FEM slides by Yang Lu, see the matching pdf-file:
+This folder contains materials related to the FEM slides by Yang Lu, see the matching pdf-file (tasks below are not part of the official exercise):
 - :new: `FEM_Firedrake.pdf`: the *updated* slides where a new section is added to serve as the basis for the *new* approach regarding automated generation of weak formulations
 - `Poissons_eq.py`: the associated [*Firedrake*](https://www.firedrakeproject.org/) code for solving the worked example
 - `L2error.py`: the Python code for plotting the $L^2$ error versus mesh resolution (*Firedrake* not required)
