@@ -1,5 +1,8 @@
+## 2024 FEM exercise
+Please consult the ex24_3FEMdraft.pdf file as well as the CDFEM.pdf file.
+
 ## About
-This folder contains materials related to the FEM presentation delivered by Yang on Friday 17 Nov 2023, as well as the updates made on 22 Nov 2023.
+This folder contains materials related to the FEM sldies by Yang Lu, see the CGFEM.pdf file:
 - :new: `FEM_Firedrake.pdf`: the *updated* slides where a new section is added to serve as the basis for the *new* approach regarding automated generation of weak formulations
 - `Poissons_eq.py`: the associated [*Firedrake*](https://www.firedrakeproject.org/) code for solving the worked example
 - `L2error.py`: the Python code for plotting the $L^2$ error versus mesh resolution (*Firedrake* not required)
