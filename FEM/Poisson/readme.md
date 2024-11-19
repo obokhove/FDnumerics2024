@@ -10,7 +10,7 @@ This folder contains materials related to the FEM slides by Yang Lu, see the mat
 - :new: `L2error_v2.py`: the *updated* code for a comparison between the $L^2$ errors obtained from the two approaches.
 - :new: Play with nCG (in line with CG, now 1, make it a variable nCG you set beforehand), such that nx*nCG=K and compare accuracy); look up CG-polynomials on the Firedrake website.
 
-## How to run the *Firedrake* code from terminal?
+## How to run the *Firedrake* code from terminal? May be obsolete
 Firedrake has been installed locally on your systems using an Apptainer (formerly Singularity) image that must be activated before you can access the Firedrake python interpreter.
 
 1. Navigate to the Apptainer image folder from the terminal:
@@ -50,7 +50,7 @@ Firedrake has been installed locally on your systems using an Apptainer (formerl
      ```
 7. Try different meshes (or order of the CG function space) and collect data. Put them into the `L2error.py` and do your own convergence analysis.
 
-### Note
+### Note May be obsolete
 :eyes:  You may find the following warning when running the code in the *Firedrake* environment. It can be safely ignored.
         ```
         firedrake:WARNING OMP_NUM_THREADS is not set or is set to a value greater than 1, we suggest setting OMP_NUM_THREADS=1 to improve performance
