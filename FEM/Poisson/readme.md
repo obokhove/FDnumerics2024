@@ -1,9 +1,32 @@
 ## 2024 FEM exercise
 Please consult the ex24_3FEM.pdf file as well as the CDFEM_Firedrakes.pdf file.
 
+## How to visualise the numerical results with [*ParaView*](https://www.paraview.org/)?
+- Create output `.pvd` file(s) in *Firedrake* code
+   - See the [related section](https://www.firedrakeproject.org/visualisation.html#creating-output-files) in the *Firedrake* documentation (or the example code).
+- Open the file in *ParaView*
+   - `File` menu -> `Open`.
+   -  Select the `.pvd` file from your directory.
+   -  Click `OK` to load the file.
+   - In the `Pipeline Browser` (upper left), select the loaded file.
+   - Click on the "eye icon" to make the data visible in the render view.
+- Select data variables
+   - Choose the variables to load in the `Properties` panel (lower left).
+   - Switch between the variables using the drop-down menu in the variables toolbar at the top.
+- Choose representation (in the `Properties` panel or the drop-down menu at the top)
+   - `Surface`: 2D contour plot.
+   - `Surface With Edges`: 2D contour plot with the mesh displayed.
+   - `Extrusion Surface`: 3D plot (the viewing angle can be adjusted using the toolbar at the top)
+- (Optional) Edit view properties
+   - Click the `Edit` button in the `Coloring` section to adjust the colour map.
+   - Tick the `Axes Grid` to display the x and y axes.
+- Save visualisation
+   - `File` menu -> `Save Screenshot` to save as an image.
+   - Alternatively, select `File` -> `Save State` to save your *ParaView* session for later use.
+
 ## About
 This folder contains materials related to the FEM slides by Yang Lu, see the matching pdf-file (tasks below are not part of the official exercise, so are just optional [information]):
-- :new: `FEM_Firedrake.pdf`: the *updated* slides where a new section is added to serve as the basis for the *new* approach regarding automated generation of weak formulations
+- :new: `CGFEM_Firedrake.pdf`: the *updated* slides where a new section is added to serve as the basis for the *new* approach regarding automated generation of weak formulations
 - `Poissons_eq.py`: the associated [*Firedrake*](https://www.firedrakeproject.org/) code for solving the worked example
 - `L2error.py`: the Python code for plotting the $L^2$ error versus mesh resolution (*Firedrake* not required)
 - :new: `Poissons_eq_v2.py`: the *updated* code where the *new* approach is added and compared with the "old" approach. The weak formulation is generated automatically via *Firedrake*'s built-in `derivative()` method in the former, while in the latter, it was derived manually and implemented explicitly.
