@@ -7,9 +7,9 @@ Load Firedrake from https://www.firedrakeproject.org/documentation.html either t
 The exercise on FEM modelling via Firedrake is found in the FEM folder.
 
 Sample Firedrake programs:
-- Poisson equation (codes in named folder) via weak formulation and minimisation (Yang Lu with Robin Furze)
+- for Poisson equation (codes in named folder) via weak formulation and minimisation (Yang Lu with Robin Furze, added comments by OB)
 - Load Firedrake environment, go to directory with (downloaded) file
-- Type >> python3 Poissons_eq_v2.py
+- To run code type >> python3 Poissons_eq_v2.py
 
 ## Paraview instructions
 
@@ -28,12 +28,12 @@ with other modules.  one may need to fix .bashrc files if the purge command
 doesn't clear the anaconda3 libraries.
 
 ## Paraview visualisation
-Load output file and display.
+Load output file and display:
 - Open Paraview
 - Go to directory with the output file named "output.pvd"
 - Under "File" in menu click open and find that file "output.pvd" (click okay).
 - Choose u1 or u2 and then click "Apply"
 - Add axis labels, in colorbar set ranges.
-- To plot the difference, etc: ask ChatGPT e.g.
+- To plot the difference, find maximum, etc: ask ChatGPT e.g.
 
 
