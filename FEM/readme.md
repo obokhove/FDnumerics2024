@@ -8,11 +8,6 @@ The exercise on FEM modelling via Firedrake is found in: ... TBD.
 
 Sample Firedrake programs:
 - Poisson equation via weak formulation and minimisation (Yang Lu with Robin Furze)
-- Continuous Galerkin FEM (CGn nth-order) shallow-water and Benney-Luke equations (SWE and BLE).
-- :new: SWE with local wave-breaking parameterization; see updated Benney-Luke equation in that folder (elegantly combines minimization and dissipative approaches in an elegant way; definition of diffusion function is still incomplete). 
-- CGn Variational Boussinesq Model (VBM). TBD.
-- :new: DG0-FV/Godunov Linear shallow-water equations. Standing waves (Nbc=1) and waves running up a slope (Nbc=3). See bespoke folder and the code: sweDGFV.py
-- Bokhove and Kalogirou 2016: Lecture Notes on the Theory of Water Waves, Edited by: Bridges, Groves and Nicholls, London Mathematical Society Lecture Notes Series 426, 226-259 https://www1.maths.leeds.ac.uk/~obokhove/lms-cup2015.pdf
 
 ## Firedrake simulation instructions
 See codes' folders. TBD.
