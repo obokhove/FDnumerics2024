@@ -2,18 +2,16 @@
 
 Load Firedrake from https://www.firedrakeproject.org/documentation.html either the recommended version or docker version.
 
-## Finite-element exercises (TBC 2024 instructions)
+## Finite-element exercises (2024 instructions)
 
-The exercise on FEM modelling via Firedrake is found in: ... TBD.
+The exercise on FEM modelling via Firedrake is found in the FEM folder.
 
 Sample Firedrake programs:
 - Poisson equation via weak formulation and minimisation (Yang Lu with Robin Furze)
+- Load Firedrake environment, go to directory with file
+- Type >>python3 Poissons_eq_v2.py
 
-## Firedrake simulation instructions
-See codes' folders. TBD.
-
-## Paraview instructions TBD
-See codes' folders. TBD.
+## Paraview instructions
 
 :new: *Warning* (via TH from IT): When other modules have been loaded incompatible libraries then Paraview may not work.
 E.g., the "anaconda3" module will cause Qt problems with "paraview". Clean environment by running:
