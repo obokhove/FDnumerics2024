@@ -29,15 +29,7 @@ modules automatically as this can cause problems with standard system software a
 with other modules.  one may need to fix .bashrc files if the purge command
 doesn't clear the anaconda3 libraries.
 
-## Shallow-water equations: model, variational principle (continuous/time-discrete)
-Potential-flow formulation
+## Paraview visualisation
 
-Settings nVP=2 in code BenneylukefbVP.py for modified midpoint time-stepping scheme
 
-Settings nVP=0 in code BenneylukefbVP.py for Stormer-Verlet time-stepping scheme
-
-## Benney-Luke equations: model, variational principle (continuous/time-discrete)
-Potential flow formulation
-
-Settings nVP=1 in code BenneylukefbVP.py for modified midpoint time-stepping scheme
 
