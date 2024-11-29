@@ -2,6 +2,9 @@
 
 All code, graphs and answers are in Numerics Coursework 1.ipynb, and the code for each question can be run independently.
 
+Q5:
+[OB: you first have to simply and make calculate |lambda|; calculations incorrect, for a=0 result M&M is not even obtained. See also M&M cahpter 4]
+
 ## Coursework 2 - Finite Volume
 
 All code, graphs and answers are in Numerics Coursework 2.ipynb, and the code for each question can be run independently.
