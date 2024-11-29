@@ -1,6 +1,6 @@
 ## Finite-volume or discontinuous Galerkin leading-order or Godunov method
 
-OB 29-11-2024: full Firedrake code added but needs modifying to (eta,y)^T
+OB 29-11-2024: full Firedrake code "SWE_DG0.py" added but it needs modifying to (eta,u)^T
 
 Firedrake (installation and examples)
 https://www.firedrakeproject.org/documentation.html
