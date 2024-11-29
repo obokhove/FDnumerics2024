@@ -1,5 +1,7 @@
 ## Finite-volume or discontinuous Galerkin leading-order or Godunov method
 
+OB 29-11-2024: full Firedrake code added but needs modifying to (eta,y)^T
+
 Firedrake (installation and examples)
 https://www.firedrakeproject.org/documentation.html
 
