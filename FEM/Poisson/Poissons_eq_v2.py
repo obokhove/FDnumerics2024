@@ -47,8 +47,8 @@ solve(F == 0, u_2, bcs=[bc_x0, bc_x1]) # Step 4: the solution assigned to u2
 
 # 
 # Post-processing: Use Paraview to visualise
-# 
-outfile = File('output.pvd')
+# See https://www.firedrakeproject.org/visualisation.html#creating-output-files
+outfile = VTKFile('output.pvd')
 outfile.write(u_1, u_2)
 
 f.interpolate(sin(pi*x)*cos(pi*y))
