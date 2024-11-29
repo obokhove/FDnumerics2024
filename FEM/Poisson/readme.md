@@ -1,5 +1,5 @@
 ## 2024 FEM exercise
-Please consult the ex24_3FEMdraft.pdf file as well as the CDFEM_Firedrakes.pdf file.
+Please consult the ex24_3FEM.pdf file as well as the CDFEM_Firedrakes.pdf file.
 
 ## About
 This folder contains materials related to the FEM slides by Yang Lu, see the matching pdf-file (tasks below are not part of the official exercise, so are just optional [information]):
