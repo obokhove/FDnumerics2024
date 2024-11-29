@@ -29,4 +29,10 @@ doesn't clear the anaconda3 libraries.
 
 ## Paraview visualisation
 Load output file and display.
+- Open Paraview
+- Go to directory with the output file named "output.pvd"
+- Under "File" in menu click open and find that file "output.pvd" (click okay).
+- Choose u1 or u2 and then click "Apply"
+- Add axis labels, in colorbar set ranges.
+
 
