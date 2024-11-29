@@ -1,5 +1,5 @@
 ## 2024 FEM exercise
-Please consult the ex24_3FEM.pdf file as well as the CDFEM_Firedrakes.pdf file.
+Please consult the ex24_3FEM.pdf file as well as the CGFEM_Firedrakes.pdf file.
 
 ## How to visualise the numerical results with [*ParaView*](https://www.paraview.org/)?
 - Create output `.pvd` file(s) in *Firedrake* code
