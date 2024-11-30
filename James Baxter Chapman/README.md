@@ -16,6 +16,10 @@ Q8: Same issue and no (valid) interpretation. 14.5/20
 All code, graphs and answers are in Numerics Coursework 2.ipynb, and the code for each question can be run independently.
 Please note Firedrake was not used in this code, and therefore is not required.
 
+OB: Use u and eta not H0*u and eta.
+OB: periodic bc in Firedrake can be done.
+OB: can you compare with the exact solution at a final time and then show visual convergence, please. Try new scheme provided.
+
 ## Python Library requirements:
 - Numpy
 - Scipy
