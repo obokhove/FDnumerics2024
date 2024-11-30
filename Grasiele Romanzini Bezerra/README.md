@@ -6,3 +6,5 @@ The codes were written in Jupyter Notebooks and can be oppened on Jupyter notebo
 - In ``Exercises_2``  are all the answares for the second sheet. **The main file is the PDF report with all the answers and discussions**  ``Exercises_2/FoFD_Numerical_activity2.pdf``
 The code for each question is in it designated folder, as for example the code used for question 4 are in ``Exercises_1/codes/Q4``.
 
+OB: For linear problems such as advection eqns: there is no shock wave.
+
