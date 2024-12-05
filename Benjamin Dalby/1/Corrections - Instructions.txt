@@ -1,0 +1,14 @@
+NB - Onno, I have made changes to questions 2,3,6,7,8 since first submission. I have not touched 4 and 5 as I have never been taught Fourier
+analysis and I don't know how to improve it. I hope you can see the improvement. I now have the correct upwind scheme, boundary layers, etc.
+
+Note - when the seed is set python will still print out the values of the random draw for the Legendre polynomials even though they
+are not used, please ignore this.
+
+Question 6. Set theta to 0,1 with use_legendre=False to get first figure. Than, set theta=1 and increase del_t to 0.0025 to get figure 2. Finally, reduce del_t back to 0.0001 and set use_legendre=True to get the last figure.
+
+Question 7. First, ensure seed is set to [0.6149655,0.40498927,0.93575839] (uncomment line 102) and vary J from 100, 200, 400, while changing del_t from 0.001, 0.0005, 0.000025 respectively to get the grid refinement study. Then, set zoom to True to get remaining graphs and repeat the process of changing J and del_t using the above values to get the final figure.
+
+Question 8.
+
+Vary epsilon along values  0.0001, 0.00001, 0.000001. Then set zoom to True and repeat to get the second figure. Make sure the seed is still
+set to [0.6149655,0.40498927,0.93575839].
