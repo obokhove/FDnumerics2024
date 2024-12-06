@@ -68,9 +68,9 @@ def theta_solve(U : np.ndarray, t: int | float, epsilon : float, a_val : float, 
         A[-1,-1] = 1
 
         #General case
-        A[j, j-1] =-1*(epsilon*theta*mu) #-1*a_t(U, j, del_t, del_x, a_val, (theta))*theta*mu_x - (epsilon*theta*mu) #-1*(max(a_val, 0)*theta*mu_x) - (epsilon*theta*mu)
-        A[j,j] = 1 + (2*epsilon*theta*mu) + a_val*theta*mu_x#1 + (2*epsilon*theta*mu) + (max(a_val, 0)*theta*mu_x)#+ (max(a_val, 0)*theta*mu_x) - ((min(a_val, 0))*theta*mu_x)
-        A[j, j+1] = -1*a_val*theta*mu_x - (epsilon*theta*mu)#-1*a_t(U, j, del_t, del_x, a_val, (theta))*theta*mu_x - (epsilon*theta*mu)
+        A[j, j-1] =-1*(epsilon*theta*mu) 
+        A[j,j] = 1 + (2*epsilon*theta*mu) + a_val*theta*mu_x
+        A[j, j+1] = -1*a_val*theta*mu_x - (epsilon*theta*mu)
 
         A = sp.csr_matrix(A)
 
