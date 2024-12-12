@@ -1,1 +1,1 @@
-
+Please find a hand-written PDF file which goes through the mathematical parts of questions 1 and 2 (questions are numbered according to the handout). The Jupyter Notebook file includes the code I altered and added comments to for question 4 and 5. another pdf that goes through question 4 with the error contour plots is also provided. 
