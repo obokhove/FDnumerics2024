@@ -1,0 +1,7 @@
+Please see Assignment_2__Updated. I have added q's 4-7.
+
+Please run the swedg0.py file while changing Nx to change the number of elements. Change Tend to change time period.
+Change CFL to change to CFL. Change Alter_Flux to True for alternating flux. The code has been adapted to create Mean Absolute Error results.
+
+Note - Onno you said in the questions we can use either the formulation in H_0u and eta or the formulation in u and eta. I have chose to stay in the formulation H_0u eta as this is
+what I did for my derivation.
