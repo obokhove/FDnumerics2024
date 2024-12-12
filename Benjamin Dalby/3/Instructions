@@ -1,0 +1,1 @@
+I adjusted your code to add the exact equation. All analysis was conducted in paraview by running abs(u_h - u_exact).
