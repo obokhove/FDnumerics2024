@@ -20,6 +20,12 @@ OB: Use u and eta not H0*u and eta.
 OB: periodic bc in Firedrake can be done.
 OB: can you compare with the exact solution at a final time and then show visual convergence, please. Try new scheme provided.
 
+## Coursework 3 - Finite Element
+
+Similarly to the previous coursework, the solutions can be found in Numerics Coursework 3.ipynb. Firedrake is required in order to run a section
+of this code, however all figures have been provided within the Jupyter Notebook.
+
+
 ## Python Library requirements:
 - Numpy
 - Scipy
