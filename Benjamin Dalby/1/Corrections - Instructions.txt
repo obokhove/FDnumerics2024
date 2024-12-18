@@ -1,6 +1,5 @@
 NB - Onno, I have made changes to questions 2,3,6,7,8 since first submission. I have not touched 4 and 5 as I have never been taught Fourier
-analysis and I don't know how to improve it. I now have the correct upwind scheme. I think I have an issue with the Legendre polynomial as I'm
-not getting the nice boundary layer. Still, I hope you can see the improvement and that I have had a better go at the analysis for the latter parts despite the issue.
+analysis and I don't know how to improve it. I now have the correct upwind scheme. I hope you can see the improvement and that I have had a better go at the analysis for the latter parts.
 
 Note - when the seed is set python will still print out the values of the random draw for the Legendre polynomials even though they
 are not used, please ignore this.
