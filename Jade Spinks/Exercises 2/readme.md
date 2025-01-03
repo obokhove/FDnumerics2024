@@ -1,1 +1,2 @@
-Exercise 2 amendments are TBC - to be submitted around 02/01/2024 incl Q4 code & plots
+(03/01/2025 15:17) I have uploaded the amendments to Ex2 Qu1-Qu4 in folder 'Ex2 (Amended submission)'. Remaining questions Q6-Q8 are TBC. 
+
